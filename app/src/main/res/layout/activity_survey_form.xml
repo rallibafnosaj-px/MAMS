@@ -1,0 +1,1976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SurveyFormActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Merchant"
+                android:textAlignment="center"
+                android:textSize="12pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_sDateOfVisit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date Of Visit"
+                android:textAlignment="center"
+                android:textSize="9pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_sAgentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Agent Name"
+                android:textAlignment="center"
+                android:textSize="9pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sNameOfMall"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Business Area">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sNameOfMall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/iv_sUploadCounterPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </ImageView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sUploadCounterPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Upload Counter Picture">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <Spinner
+                android:id="@+id/sp_MayaStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp">
+
+            </Spinner>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sMayaStatusOthers"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Others"
+                android:visibility="gone">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sMayaStatusOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sDBAName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="DBA Name">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sDBAName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sRegBizName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Registered Business Name">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sRegBizName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sSubArea"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="SubArea Ex.(Flr, Brgy st. (address))">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sSubArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sMercSPOCName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Merchant SPOC Name">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sMercSPOCName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sMercSPOCDesig"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Merchant SPOC Designation">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sMercSPOCDesig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sMercSPOCEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Merchant SPOC Email">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sMercSPOCEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sMercSPOCContact"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Merchant SPOC Contact Number">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sMercSPOCContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_gapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/gcash_apa"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/RL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Static QR"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sGcashStaticQrYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedGcashStaticQR"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sGcashStaticQrNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedGcashStaticQR"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="QR Inside POS/Terminal"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sGcashQRIPOSYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedGcashQRIPOS"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sGcashQRIPOSNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedGcashQRIPOS"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Both"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sGcashBothYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedGcashBoth"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sGcashBothNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedGcashBoth"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Terminals Available" />
+
+            <TextView
+                android:id="@+id/tv_sTerminalAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:hint="Terminals Available"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:hint="Other Merchandise Visible in store" />
+
+            <TextView
+                android:id="@+id/tv_sOtherMercVisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:hint="Other Merchandise Visible in store"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:hint="Merchant Restriction" />
+
+            <TextView
+                android:id="@+id/tv_sMercRestrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:hint="Merchant Restriction"
+                android:padding="12dp" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/tv_maya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/maya_visibile"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <RelativeLayout
+                android:id="@+id/RL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Hidden"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaHiddenYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaHidden"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaHiddenNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaHidden"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Standee"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaStandeeYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaStandee"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaStandeeNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaStandee"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Door Hanger"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaDHYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaDH"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaDHNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaDH"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="None"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaNoneYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaNone"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sMayaNoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMayaNone"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_nonMaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/non_maya_visibile"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/RL8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Standee"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sNonMayaStandeeYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedNonMayaStandee"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sNonMayaStandeeNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedNonMayaStandee"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Door Hanger"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sNonMayaDHYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedNonMayaDH"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sNonMayaDHNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedNonMayaDH"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="None"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sNonMayaNoneYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedNonMayaNone"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sNonMayaNoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedNonMayaNone"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_sQRVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="QR Version"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/RL11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Green bird 1.5"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sQrGBYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedQrGB"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sQrGBNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedQrGB"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Maya 2.0"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sMaya2zeroYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMaya2zero"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sMaya2zeroNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedMaya2zero"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_sSQRPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </ImageView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sSQRPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Upload SQR Picture">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:hint="Available SQR" />
+
+            <TextView
+                android:id="@+id/tv_sAvailSQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:hint="Available SQR"
+                android:padding="12dp" />
+
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sQ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Tumatanggap ba kayo ng Payment Galing sa ibang EWallet?"
+                    android:textSize="7pt">
+
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sQ1Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedQ1"
+                        android:text="Yes">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_sQ1No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="onRBClickedQ1"
+                        android:text="No">
+
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="How many maya devices are there?"
+                android:textSize="7pt"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sQ2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Count of Device(s)">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sSerial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Input Device(s) Serial No.">
+
+
+            </com.google.android.material.button.MaterialButton>
+            <RelativeLayout
+                android:id="@+id/RLSerial00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial00"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 1">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial00"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 1">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/RLSerial1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone">-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/tl_sSerial1"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:backgroundTint="@color/purple_500"-->
+<!--                    android:hint="Invalid">-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/et_sSerial1"-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:inputType="number"-->
+<!--                        android:textColor="#000000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/btn_sSerial1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:backgroundTint="@color/purple_500"-->
+<!--                    android:text="SN 1">-->
+
+
+<!--                </com.google.android.material.button.MaterialButton>-->
+
+
+<!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/RLSerial2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 2">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 2">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 3">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 3">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN4"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial4"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 4">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 4">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial5"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 5">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial5"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 5">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN6"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial6"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 6">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial6"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 6">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN7"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial7"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 7">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial7"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 7">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN8"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial8"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 8">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial8"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 8">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN9"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial9"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 9">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial9"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 9">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSerial10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_SN10"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentTop="true">
+
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sSerial10"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:hint="Device 10">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sSerial10"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sSerial10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="SN 10">
+
+
+                </com.google.android.material.button.MaterialButton>
+
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sQ3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Device Serial Number"
+                android:visibility="gone">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sQ3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:id="@+id/line7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="How many Maya SQRS are there?"
+                android:textSize="7pt"></TextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sQ4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Count of SQRS">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sQ4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sSQRCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/purple_500"
+                android:onClick="SelectPhotoSQR"
+                android:text="Attach SQR">
+
+
+            </com.google.android.material.button.MaterialButton>
+
+            <RelativeLayout
+                android:id="@+id/RL13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_sQ5"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:hint="StoreCode">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_sQ5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_storeScan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/ic_scan">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sPisoTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:onClick="SelectPhotoPISOTEST"
+                android:text="Piso Test">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sCompDelAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Complete Delivery Address">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sCompDelAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_sRemarks"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/purple_500"
+                android:hint="Remarks">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sExtraCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/purple_500"
+                android:onClick="SelectPhotoEXTRA"
+                android:text="Attach Additional Image">
+
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sSubmitForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Submit">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

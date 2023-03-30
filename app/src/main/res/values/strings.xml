@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Merchant Acquisition Management System</string>
+    <string name="shr_hint_username">Username</string>
+    <string name="shr_hint_password">Password</string>
+    <string name="shr_button_next">Login</string>
+    <string name="app_version">App Version: 1.0.0</string>
+    <string name="gcash_apa">Gcash Acceptance Payment Available?</string>
+    <string name="maya_visibile">Maya Visibility</string>
+    <string name="non_maya_visibile">Non Maya Visibility</string>
+
+    <string-array name="terminaltype">
+        <item>Terminal Type</item>
+        <item>P1</item>
+        <item>P1 Light</item>
+        <item>Sunmi</item>
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinVerifyActivity"
+    android:orientation="vertical">
+
+            <com.hanks.passcodeview.PasscodeView
+                android:id="@+id/passcodeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5FD4EA"
+                app:firstInputTip="Enter a passcode of 4 digits "
+                app:correctStateColor="#71bb4d"
+                app:wrongStateColor="#ea2b46"
+                app:normalStateColor="#ffffff"
+                app:numberTextColor="#222222"
+                app:passcodeLength="4"
+                app:passcodeViewType="set_passcode"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login using password?"
+        android:textColor="#5FD4EA"
+        android:layout_marginBottom="10dp"
+        android:textSize="9pt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_backToLogin">
+
+    </TextView>
+
+</RelativeLayout>
