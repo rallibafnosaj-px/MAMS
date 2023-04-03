@@ -355,46 +355,27 @@ public class SurveyFormActivity extends AppCompatActivity {
 
                 if(GlobalVariables.fromDashboard)
                 {
+
                     builder.setMessage("Proceed?")
                             .setCancelable(true)
                             .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
 
-                                    offDB.UpdateSurveyFromActivity(id, yearMonthDay, empName, etNameOfMall.getText().toString(),
-                                            imageString1, mayaStatus, etDBAName.getText().toString(), etRegBizName.getText().toString(),
-                                            etSubArea.getText().toString(),
-                                            etMercSPOCName.getText().toString(),
-                                            etMercSPOCDesig.getText().toString(),
-                                            etMercSPOCEmail.getText().toString(),
-                                            etMercSPOCContact.getText().toString(),
-                                            gCashStaticQR,
-                                            gCashQRInsidePOS,
-                                            gCashBoth,
-                                            tvTerminalAvailable.getText().toString(),
-                                            tvOtherMercVisible.getText().toString(),
-                                            mayaHidden,
-                                            mayaStandee,
-                                            mayaDoorHanger,
-                                            mayaNone,
-                                            nonMayaStandee,
-                                            nonMayaDoorHanger,
-                                            nonMayaNone,
-                                            qrGreenBird,
-                                            qrMaya2,
-                                            imageString2,
-                                            tvAvailSQR.getText().toString(),
-                                            tvMercRestrict.getText().toString(),
-                                            otherPaymentEwallet,
-                                            etQ2.getText().toString(),
-                                            etQ3.getText().toString(),
-                                            etQ4.getText().toString(),
-                                            etQ5.getText().toString(),
-                                            transactionID,
-                                            etCompDelAdd.getText().toString(),
-                                            etRemarks.getText().toString());
+                                    offDB.UpdateSurveyFromActivity(etNameOfMall.getText().toString(),spMayaStatus.getSelectedItem().toString(),
+                                            etDBAName.getText().toString(),etRegBizName.getText().toString(),etSubArea.getText().toString(),
+                                            etMercSPOCName.getText().toString(),etMercSPOCDesig.getText().toString(),etMercSPOCEmail.getText().toString(),
+                                            etMercSPOCContact.getText().toString(),"" + gCashStaticQR,"" +gCashQRInsidePOS,
+                                            tvTerminalAvailable.getText().toString()
+                                    ,tvOtherMercVisible.getText().toString(),"" + mayaHidden,"" +mayaStandee,""+mayaDoorHanger
+                                            ,"" +mayaNone, "" + nonMayaStandee, "" +nonMayaDoorHanger
+                                    ,"" + nonMayaNone, "" + qrGreenBird, "" + qrMaya2,tvAvailSQR.getText().toString(),tvMercRestrict.getText().toString(),"" +otherPaymentEwallet,
+                                          tvAvailSQR.getText().toString(), etQ2.getText().toString(),etQ4.getText().toString(),etQ5.getText().toString(),
+                                            transactionID,etCompDelAdd.getText().toString(),etRemarks.getText().toString(),id,"" + gCashBoth
+                                            );
                                 }
-                            });
+                            }).show();
+
                 }
                 else
                 {

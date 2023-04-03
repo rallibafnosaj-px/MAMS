@@ -404,6 +404,21 @@ public class SurveyFormActivitySQLite extends SQLiteDatabaseTemplate{
         return "false";
     }
 
-    public void UpdateSurveyFromActivity() {
+    public void UpdateSurveyFromActivity(String name_of_mall,
+                                         String maya_status, String dba_name, String reg_business_name, String sub_area, String merc_spoc_name, String merc_spoc_designation,
+                                         String merc_spoc_email, String merc_spoc_contact, String gcash_accept_statc, String gcash_accept_qrinsidepos, String terminal_avail,
+                                         String other_merc_visible, String maya_visibility_hidden, String maya_visibility_standee, String maya_visibility_doorhanger,
+                                         String maya_visiblity_none, String nonmaya_visiblity_standee,String nonmaya_visiblity_doorhanger, String nonmaya_visibility_none,
+                                         String qr_green_bird, String qr_mayatwo,String  available_sqr,String merc_restriction,String accept_other_qr,String maya_device_count,
+                                         String maya_device_sn,String maya_sqr_count,String store_code, String transaction_id, String complete_delivery_add,String remarks,
+                                        String ID,String gcash_accept_both) {
+
+
+        Toast.makeText(context, "hehe", Toast.LENGTH_SHORT).show();
+
+
+
+
+
     }
 }
