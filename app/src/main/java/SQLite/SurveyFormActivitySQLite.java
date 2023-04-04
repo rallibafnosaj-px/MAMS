@@ -431,4 +431,22 @@ public class SurveyFormActivitySQLite extends SQLiteDatabaseTemplate{
 
 
     }
+
+    public void DeleteMerchantVisit(String id) {
+
+        try {
+
+            SQLiteDatabase db = this.getWritableDatabase();
+            query = "Delete from merchant_visit" +
+                    " where ID =" + "'" + id + "'";
+            db.execSQL(query);
+
+
+        } catch (Exception e) {
+            Log.d(TAG, "UpdateDTRStatus: " + e.toString());
+        }
+
+
+
+    }
 }

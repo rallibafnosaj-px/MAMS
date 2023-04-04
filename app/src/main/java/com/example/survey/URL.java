@@ -2,6 +2,7 @@ package com.example.survey;
 
 public class URL {
 
+
     //local ip
 //    public static String IP = "192.168.1.11:8080";
     //live ip
@@ -19,5 +20,6 @@ public class URL {
     public static String GETSYNCEDMERCHANT = ROOT_URL + "get_synced_merchant.php";
     public static String UPDATEASSIGNSTATUS = ROOT_URL + "update_assignment_status.php";
     public static String ADDMERCHANTSERIAL = ROOT_URL + "add_merchant_serialnumber.php";
+    public static String GETSYNCEDMERCHANTVISIT = ROOT_URL + "get_synced_merchant_visit.php";
 
 }

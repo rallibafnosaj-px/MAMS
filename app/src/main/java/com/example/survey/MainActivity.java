@@ -226,6 +226,18 @@ public class MainActivity extends AppCompatActivity {
 //                    }
                 }
 
+                if (GlobalVariables.processListSync == 4) {
+                    offDB.SyncMerchantSerialToLive();
+                    GlobalVariables.thread = true;
+//                    if(offExpenseDB.CheckExpenses()==true){
+//                        offExpenseDB.SyncExpenseToLive();
+//                        GlobalVariables.thread = true;
+//                    }else{
+//
+//                        GlobalVariables.thread = true;
+//                    }
+                }
+
                 if (GlobalVariables.processListSync == 0) {
                     progressDialog.setMessage(GlobalVariables.progressDialogMessage);
                 }
