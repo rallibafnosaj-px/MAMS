@@ -414,7 +414,17 @@ public class SurveyFormActivitySQLite extends SQLiteDatabaseTemplate{
                                         String ID,String gcash_accept_both) {
 
 
-        Toast.makeText(context, "hehe", Toast.LENGTH_SHORT).show();
+        SQLiteDatabase db = this.getReadableDatabase();
+        query = "Update " + GlobalVariables.MERCHANTVISIT_TBL + " set name_of_mall = '"+name_of_mall+"', maya_status = '"+maya_status+"', dba_name = '"+dba_name+"', reg_business_name = '"+reg_business_name+"'" +
+                ", sub_area = '"+sub_area+"', merc_spoc_name = '"+merc_spoc_name+"', merc_spoc_designation = '"+merc_spoc_designation+"', merc_spoc_email = '"+merc_spoc_email+"'" +
+                ", merc_spoc_contact = '"+merc_spoc_contact+"', gcash_accept_static = '"+gcash_accept_statc+"', gcash_accept_qrinsidepos = '"+gcash_accept_qrinsidepos+"', terminal_avail = '"+terminal_avail+"'" +
+                ", other_merc_visible = '"+other_merc_visible+"', maya_visibility_hidden = '"+maya_visibility_hidden+"', maya_visibility_standee = '"+maya_visibility_standee+"', maya_visibility_doorhanger = '"+maya_visibility_doorhanger+"' " +
+                ", maya_visibility_none = '"+maya_visiblity_none+"', nonmaya_visibility_standee = '"+nonmaya_visiblity_standee+"', nonmaya_visibility_doorhanger = '"+nonmaya_visiblity_doorhanger+"' " +
+                ", nonmaya_visibility_none = '"+nonmaya_visibility_none+"', qr_green_bird= '"+qr_green_bird+"', qr_mayatwo = '"+qr_mayatwo+"', available_sqr = '"+available_sqr+"' " +
+                ", merc_restriction = '"+merc_restriction+"', accept_other_qr = '"+accept_other_qr+"', maya_device_count = '"+maya_device_count+"', maya_device_sn = '"+maya_device_sn+"' " +
+                ", maya_sqr_count = '"+maya_sqr_count+"', store_code = '"+store_code+"', transaction_id = '"+transaction_id+"', complete_delivery_add = '"+complete_delivery_add+"' " +
+                ", remarks = '"+remarks+"', gcash_accept_both = '"+gcash_accept_both+"' where ID = '"+ID+"'";
+        db.execSQL(query);
 
 
 

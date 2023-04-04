@@ -99,7 +99,7 @@ public class SurveyFormActivity extends AppCompatActivity {
             imageStringSN6 = "", imageStringSN7 = "", imageStringSN8 = "", imageStringSN9 = "", imageStringSN10 = "",
             textSN1 = "", textSN2 = "", textSN3 = "", textSN4 = "", textSN5 = "", textSN6 = "", textSN7 = "", textSN8 = "", textSN9 = "", textSN10 = "";
 
-    String id = "";
+    public static String ID = "";
 
     RadioButton rbStaticQRYes;
     RadioButton rbStaticQRNo;
@@ -362,7 +362,7 @@ public class SurveyFormActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
 
-                                    offDB.UpdateSurveyFromActivity(etNameOfMall.getText().toString(),spMayaStatus.getSelectedItem().toString(),
+                                    offDB.UpdateSurveyFromActivity(etNameOfMall.getText().toString(),""+spMayaStatus.getSelectedItemPosition(),
                                             etDBAName.getText().toString(),etRegBizName.getText().toString(),etSubArea.getText().toString(),
                                             etMercSPOCName.getText().toString(),etMercSPOCDesig.getText().toString(),etMercSPOCEmail.getText().toString(),
                                             etMercSPOCContact.getText().toString(),"" + gCashStaticQR,"" +gCashQRInsidePOS,
@@ -371,7 +371,7 @@ public class SurveyFormActivity extends AppCompatActivity {
                                             ,"" +mayaNone, "" + nonMayaStandee, "" +nonMayaDoorHanger
                                     ,"" + nonMayaNone, "" + qrGreenBird, "" + qrMaya2,tvAvailSQR.getText().toString(),tvMercRestrict.getText().toString(),"" +otherPaymentEwallet,
                                           tvAvailSQR.getText().toString(), etQ2.getText().toString(),etQ4.getText().toString(),etQ5.getText().toString(),
-                                            transactionID,etCompDelAdd.getText().toString(),etRemarks.getText().toString(),id,"" + gCashBoth
+                                            transactionID,etCompDelAdd.getText().toString(),etRemarks.getText().toString(),ID,"" + gCashBoth
                                             );
                                 }
                             }).show();
@@ -550,7 +550,7 @@ public class SurveyFormActivity extends AppCompatActivity {
         {
 
             Intent intent = getIntent();
-            String ID = intent.getExtras().getString("ID");
+            ID = intent.getExtras().getString("ID");
 
 
             merchantModels = offDB.RetrieveDataMerchant(ID);
